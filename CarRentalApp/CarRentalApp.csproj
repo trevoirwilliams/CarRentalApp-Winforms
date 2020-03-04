@@ -87,6 +87,12 @@
     <Compile Include="AddEditVehicle.Designer.cs">
       <DependentUpon>AddEditVehicle.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
     <Compile Include="CarRentalDb.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -109,6 +115,24 @@
       <DependentUpon>AddEditRentalRecord.cs</DependentUpon>
     </Compile>
     <Compile Include="CarRentalRecord.cs">
+      <DependentUpon>CarRentalDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ManageUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ManageUsers.Designer.cs">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ResetPassword.Designer.cs">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Role.cs">
+      <DependentUpon>CarRentalDb.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserRole.cs">
       <DependentUpon>CarRentalDb.tt</DependentUpon>
     </Compile>
     <Compile Include="Utils.cs" />
@@ -150,6 +174,9 @@
     <EmbeddedResource Include="AddEditRentalRecord.resx">
       <DependentUpon>AddEditRentalRecord.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -158,6 +185,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ManageRentalRecords.resx">
       <DependentUpon>ManageRentalRecords.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageUsers.resx">
+      <DependentUpon>ManageUsers.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ManageVehicleListing.resx">
       <DependentUpon>ManageVehicleListing.cs</DependentUpon>
@@ -171,6 +201,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ResetPassword.resx">
+      <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="CarRentalDb.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CarRentalDb.Designer.cs</LastGenOutput>

@@ -114,5 +114,10 @@ namespace CarRentalApp
         {
             Close();
         }
+
+        private void AddEditVehicle_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
